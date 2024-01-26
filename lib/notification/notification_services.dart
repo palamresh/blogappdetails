@@ -5,7 +5,7 @@ class NotificationService {
       FlutterLocalNotificationsPlugin();
 
   final AndroidInitializationSettings androidInitializationSettings =
-      AndroidInitializationSettings('Z');
+      AndroidInitializationSettings('z');
 
   void initializedNotification() async {
     InitializationSettings initializationSettings =
