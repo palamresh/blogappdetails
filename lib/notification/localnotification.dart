@@ -34,8 +34,16 @@ class _LocalNotificationState extends State<LocalNotification> {
                 },
                 child: Text("Send Notification")),
             ElevatedButton(
-                onPressed: () {}, child: Text("Scheduling Notification")),
-            ElevatedButton(onPressed: () {}, child: Text("Stop Notifiation"))
+                onPressed: () {
+                  notificationService.sechedulingNotification(
+                      'tis is a', 'my name is amresh');
+                },
+                child: Text("Secheduling Notification")),
+            ElevatedButton(
+                onPressed: () {
+                  notificationService.stopNotification();
+                },
+                child: Text("Stop Notifiation"))
           ],
         ),
       ),
