@@ -6,12 +6,20 @@ import 'package:blogapp/revesion/custome_screen/custome_login.dart';
 import 'package:blogapp/revesion/custome_utils/custome_splash_screen.dart';
 import 'package:blogapp/revesion/splash.dart';
 import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await Firebase.initializeApp();
+  FirebaseMessaging.onBackgroundMessage(onBackgroundMessageHandler);
   runApp(const MyApp());
+}
+
+@pragma('vm:entry-point')
+Future<void> onBackgroundMessageHandler(RemoteMessage message) async {
+  print('hii hellow');
+  print(message.notification!.title.toString());
 }
 
 class MyApp extends StatelessWidget {
