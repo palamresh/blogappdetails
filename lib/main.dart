@@ -1,6 +1,7 @@
 import 'package:blogapp/blogeample/screen/forgot_password.dart';
 import 'package:blogapp/blogeample/screen/login_with_phone.dart';
 import 'package:blogapp/blogeample/screen/splash_screen.dart';
+import 'package:blogapp/dowload_image_contianer.dart/folder_name_do.dart';
 import 'package:blogapp/notification/localnotification.dart';
 import 'package:blogapp/revesion/custome_screen/custome_login.dart';
 import 'package:blogapp/revesion/custome_utils/custome_splash_screen.dart';
@@ -36,7 +37,7 @@ class MyApp extends StatelessWidget {
             ColorScheme.fromSeed(seedColor: Color.fromARGB(255, 84, 3, 89)),
         useMaterial3: true,
       ),
-      home: LocalNotification(),
+      home: DownloadFolderName(),
     );
   }
 }

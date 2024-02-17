@@ -368,6 +368,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "8.2.2"
+  folder_file_saver:
+    dependency: "direct main"
+    description:
+      name: folder_file_saver
+      sha256: "70d533ad7c3125204f156399d60b84822e7f38f9e29491e274349b580c0c7725"
+      url: "https://pub.dev"
+    source: hosted
+    version: "2.0.5"
   http:
     dependency: transitive
     description:
